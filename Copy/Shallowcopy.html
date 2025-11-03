@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let array=[[10,11,23],[3,5,6]]
+        console.log(array)
+        let array2=[...array]
+        console.log(array)
+        console.log(array2)
+        array[1].push(55)
+        console.log(array)
+        console.log(array2)
+
+
+        //Example 2
+        let person = {
+        name: "Kani",
+        address: {
+          city: "Chennai",
+          pincode: 600001
+        }
+        };
+        let copy1 = { ...person };
+        copy1.address.city = "Madurai";
+        console.log("Original:", person);
+        console.log("Copy:", copy1);
+
+
+       
+    </script>
+</body>
+</html>

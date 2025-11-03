@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //normal function declaration
+        function add(a,b){
+            return a+b
+        }
+    result=add(1,2)
+    console.log(result)
+
+    //function expression
+  let sub =function(c,d){
+     return c-d
+   }
+   console.log(sub(10,20))
+
+   //arrow function
+   let add1=(a,b)=>{
+    return a+b;
+   }
+   console.log(add1(40,50))
+
+   //one line arrow func
+   let multiply=(a,b)=> a*b
+   console.log(multiply(2,9))
+
+//    IIFE ---> immediate invoke func expression
+  (function(a,n){
+    console.log(a+n)
+   })(1,2);
+
+
+
+
+   
+   
+   
+
+
+    </script>
+</body>
+</html>

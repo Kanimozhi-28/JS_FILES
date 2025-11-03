@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // console.log("Shallow copy")
+        // let array1=[{name:"kanimozhi"},{name:"someone"}]
+        // console.log(array1)
+        // let newarr=array1.slice();
+        // console.log(newarr)
+        // array1[1].name="mukilan"
+        // console.log(array1)
+        // console.log(newarr)
+
+        console.log("Deep copy")
+        let array=[{name:"kanimozhi"},{name:"someone"}]
+        console.log(array)
+        let newarr1=array.slice();
+        console.log(newarr1)
+        array[1].name="mukilan"
+        console.log(array)
+        console.log(newarr1)
+
+
+    </script>
+</body>
+</html>

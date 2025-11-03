@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function add(a,b){
+            return a+b
+        }
+        function sub(a,b){
+            return a-b
+        }
+        function mul(a,b){
+            return a*b
+        }
+        function calc(a,b,callback){
+            return callback(a,b)
+        }
+        exmp=calc(10,20,mul)
+        console.log(exmp)
+
+        console.log("callback func example2")
+        
+        function circle(radius){
+            return Math.PI* radius*radius
+        }
+        function square(side){
+            return side*side
+        }
+        function traingle(side){
+            return (Math.sqrt(3)/4)*side* side
+        }
+        function calculatearea(value,callback){
+            example=callback(value);
+            console.log(example)
+
+        }
+        calculatearea(3,square)
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function func(car){
+            let a= {
+            name:"tesla",
+            cost:12.34,
+            milage:1.4
+        };
+        return a
+        }
+        console.log(func());
+        console.log("Function as input is passed to another func")
+
+
+        function exmp(func){
+            func(100,200)
+        }
+        function add(a,b){
+            console.log(a+b)
+        }
+        exmp(add);
+        add(900,2)
+      
+    </script>
+</body>
+</html>

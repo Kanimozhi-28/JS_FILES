@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function func1(){
+            console.log("Inside function1")
+        
+        function func2(){
+            console.log("Inside function2")
+        }
+       return func2;
+    }
+    example=func1();
+    example();
+
+     //CLOSURE
+     console.log("closure example1")
+     function outerfunc(){
+        let outervar=10
+     
+     function innerfunc(){
+        console.log("outer varaible:",outervar)
+     }
+     return innerfunc;
+    }
+    exmp =   outerfunc();
+    exmp();
+
+
+    console.log("closure example2")
+    function createcounter(){
+        let counter=1
+    
+    return function(){
+        counter+=1  
+        console.log("countervalue:",counter);
+    }
+}
+let counterA=createcounter();
+counterA();
+
+
+
+    </script>
+</body>
+</html>

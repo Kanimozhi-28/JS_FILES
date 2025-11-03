@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+    //MAP
+    console.log("MAP METHOD")
+    let numbers=[1,4,9,16];
+    function squareroot(x){
+        return Math.sqrt(x)
+    }
+    let result=numbers.map(function (x){
+        return Math.sqrt(x)
+    })
+    console.log(numbers)
+    console.log(result)
+
+    //filter
+    console.log("FILTER METHOD")
+    let age=[32,45,13,5];
+    function checkage(x){
+        if(x>18){
+            return true
+        }
+        else{
+            return false
+        }
+    }
+    let res=age.filter(checkage);
+    console.log(age)
+    console.log(res)
+
+    //reduce
+    console.log("REDUCE METHOD")
+    let num=[1,5,6,7,8]
+
+    let answer=num.reduce((total,x)=>total+x);
+    console.log(answer)
+    
+    //some
+    console.log("SOME METHOD")
+    let score=[9,4,5,6]
+    let grade=score.some((x)=>x>85)
+    console.log(grade) 
+    console.log("EVERY METHOD")
+    let passed=score.every((x)=>x>=50)
+    console.log(passed)
+
+    console.log("FIND METHOD")
+    let score1=[34,6,7,90]
+    let studentgrade=score1.find((x)=>x>70)
+    console.log(studentgrade)
+    let studentgradeindex=score1.findIndex((x)=>x>70)
+    console.log(studentgradeindex)
+
+    //sort the array
+    let array=["banana","apple","pear","kiwi"]
+    let res1=array.sort();
+    console.log(res1)
+
+    let marks=[34,67,89,21]
+    let ans=marks.sort();
+    console.log(ans)
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+</html>
