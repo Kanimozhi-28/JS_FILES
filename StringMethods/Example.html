@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //split
+        let userinput="  alice john   | ALICEexample@gmail.COM  | java developer  |I love javascript  ";
+        let parts=userinput.split("|");
+        console.log(userinput)
+        console.log(parts)
+        //trim
+        let nametrim=userinput.trim();
+        console.log(nametrim);
+        let name =parts[0].trim();
+        console.log(name)
+        console.log(parts[0]);
+        let email=parts[1].trim();
+        console.log(email);
+        console.log(parts[1])
+        //uppercase and lowercase
+        name.toUpperCase();
+        console.log(name.toUpperCase());
+        email.toLowerCase();
+        console.log(email.toLowerCase());
+        //includes
+        let includesmethod=parts.includes("html")
+        console.log(includesmethod)
+        //indexof
+        let indexofmethod=parts.indexOf("  alice john   ")
+        console.log(indexofmethod)
+        //replace and replace all
+        let replacemethod=userinput.replace("love","like")
+        console.log(replacemethod)
+        console.log(parts)
+        let replaceallmethod=userinput.replaceAll("  "," ")
+        console.log(replaceallmethod)
+        //slice
+        let slicemethod=userinput.slice(6,11);
+        console.log(slicemethod);
+        //length
+        let lengthmethod=name.length;
+        console.log(lengthmethod);
+
+
+        let validemail=email.includes("@")&& email.endsWith(".COM")
+        console.log(validemail)
+        //templatestring
+        let seperator="-".repeat(20)
+        let finalprofile=`
+        userprofile:
+        %{seperator}
+
+        name      :${name}
+        email     :${email}
+        %{seperator}
+
+        `;
+        console.log(finalprofile);
+    
+
+
+
+
+    </script>
+</body>
+</html>

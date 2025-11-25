@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function func1(){
+            console.log("func1 is started")
+            console.log("func1 is completed")
+        }
+        function func2(){
+            console.log("func2 is started")
+            let start=Date.now(); //start from jan 1 1970 millinseconds till now  
+            let delay=5000;   //milliseconds
+            let end = start +delay;
+            while(Date.now()<=end){
+            }
+            console.log("func2 is completed")
+        }
+         function func3(){
+            console.log("func3 is started")
+            let start=Date.now(); //start from jan 1 1970 millinseconds till now  
+            let delay=5000;   //milliseconds
+            let end = start +delay;
+            while(Date.now()<=end){
+            }
+            console.log("func3 is completed")
+        }
+        function func4(){
+            console.log("func4 is started")
+            console.log("func4 is completed")
+        }
+        func1();
+        setTimeout(func2,1000);
+        setTimeout(func3,2000);
+        func4();
+
+    </script>
+</body>
+</html>

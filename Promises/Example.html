@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function loaddashboard(id,callback){
+            setTimeout(()=>{
+                if(error){
+                    return callback(error)
+                }
+                console.log("fetching user data...")
+                   setTimeout(()=>{
+                console.log("fetching user friendlist...")
+
+               setTimeout(()=>{
+                console.log("fetching user posts...")
+
+               setTimeout(()=>{
+                console.log("fetching user comments...")
+
+            },2000)
+            },2000)
+            },2000)
+            },2000)
+        }
+        loaddashboard();
+        function errorHandler(error)
+        {
+            console.log("error occured",err)
+        }
+    </script>
+
+</body>
+</html>
